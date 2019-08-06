@@ -1,0 +1,139 @@
+---
+layout: default
+disqus: false
+post_class: post-template
+---
+
+<style type="text/css">
+    #collect-chat-avatar-text  {
+        display: none !important;
+    }
+</style>
+<div id="content" class="site-content fadeInDown delay_075s">
+    <main id="main" class="site-main outer">
+        <article class="post-full inner">
+            <header class="post-header">
+                <div class="post-meta">
+                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d,
+                        %Y" }}</time>
+                </div><!-- .post-meta -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+                {% endif %}
+                <p class="time-to-read">This article will take {{ content | reading_time | pluralize: "minute" }} to read.</p>
+            </header><!-- .post-header -->
+            {% if page.featured_image %}
+            <div class="post-thumbnail"><img class="featured-image img-fluid" src="{{ site.baseurl }}{{ page.featured_image }}"
+                    alt="{{ page.title }}"></div>
+            {% endif %}
+            <div class="post-content">
+                {{content}}
+                <p class="thank-you-for-reading">Thank You for reading.</p>
+            </div>
+            <footer class="post-footer">
+                {% if page.tags.size > 0 %}
+                <p class="post-tags">
+                    {% for tag in page.tags %} {% if forloop.index == page.tags.size %}
+                        <a href='{{ site.baseurl }}tag/{{ tag | downcase }}/'>{{ tag | camelcase }}</a>
+                        {% else %}
+                        <a href='{{ site.baseurl }}tag/{{ tag | downcase }}/'>{{ tag | camelcase }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </p>
+                {% endif %}
+                <div class="post-share">
+                    <web-share-wrapper text="Share this article">
+                        <span class="post-share-title">Share:</span>
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}&amp;title={{ page.title | url_encode }}&amp;summary={{ page.excerpt | url_encode }}&amp;source=blog.polarize.ai">LinkedIn</a>
+                        <a target="_blank" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">Twitter</a>
+                    </web-share-wrapper>
+                </div><!-- .share-post -->
+            </footer>
+            <div class="author-box">
+                <div class="author-avatar"><a href="#" onclick="collectchat.open()"><img src="{{ site.baseurl }}/assets/images/{{ site.author.image }}" alt="{{ site.author.name }}'s Picture"
+                                                                                         class="avatar"></a></div>
+                <div class="author-details">
+                    <h2 class="author-title">About {{ site.author.name }}</h2>
+                    <p class="author-description">{{ site.author.bio }}</p>
+                    <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/ZBL1NxlY9"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a Smoothie"><span style="margin-left:5px">Buy me a Smoothie</span></a>
+                </div>
+            </div>
+            {% include disqus.html %}
+        </article>
+        {% if site.mailchimp_url %}
+        {% include newsletter-box.html %}
+        {% endif %}
+        <section class="read-next inner">
+            <h2 class="read-next-title">Read Next</h2>
+            {% if page.previous.url %}
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-meta">
+                        <time class="published" datetime="{{page.previous.date | date: '%B %-d, %Y'}}">{{page.previous.date
+                            | date: "%B %-d, %Y"}}</time>
+                    </div>
+                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></h3>
+                    <p class="post-tags">
+                        {% if page.previous.tags.size > 0 %}
+                        {% for tag in page.previous.tags %}
+                        {% if forloop.index == page.previous.tags.size %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% else %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </header>
+                {% if page.previous.featured_image_thumbnail %}
+                <a href="{{ site.baseurl }}{{page.previous.url}}" class="post-thumbnail">
+                    <img src="{{ page.previous.featured_image_thumbnail }}" alt="{{page.previous.title}}" />
+                </a>
+                {% elsif page.previous.featured_image %}
+                <a href="{{ site.baseurl }}{{page.previous.url}}" class="post-thumbnail">
+                    <img src="{{ page.previous.featured_image }}" alt="{{page.previous.title}}" />
+                </a>
+                {% else %}
+                {% endif %}
+            </article>
+            {% endif %}
+            {% if page.next.url %}
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-meta">
+                        <time class="published" datetime="{{page.next.date | date: '%B %-d, %Y'}}">{{page.next.date |
+                            date: "%B %-d, %Y"}}</time>
+                    </div>
+                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></h3>
+                    <p class="post-tags">
+                        {% if page.next.tags.size > 0 %}
+                        {% for tag in page.next.tags %}
+                        {% if forloop.index == page.next.tags.size %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% else %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </header>
+                {% if page.next.featured_image_thumbnail %}
+                <a href="{{ site.baseurl }}{{page.next.url}}" class="post-thumbnail">
+                    <img src="{{ page.next.featured_image_thumbnail }}" alt="{{page.next.title}}" />
+                </a>
+                {% elsif page.next.featured_image %}
+                <a href="{{ site.baseurl }}{{page.next.url}}" class="post-thumbnail">
+                    <img src="{{ page.next.featured_image }}" alt="{{page.next.title}}" />
+                </a>
+                {% else %}
+                {% endif %}
+            </article>
+            {% endif %}
+        </section><!-- .read-next -->
+    </main><!-- .site-main -->
+</div><!-- .site-content -->

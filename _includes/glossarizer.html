@@ -1,0 +1,58 @@
+<script src="/assets/js/jquery.glossarizer.js"></script>
+<script>
+$(function(){
+  $('.post-content').glossarizer({
+    sourceURL: '/assets/glossary.json',
+    replaceTag    : 'abbr',
+    lookupTagName : 'p, ul, a, div',
+    replaceOnce   : true,
+    replaceClass  : 'glossarizer_replaced',
+    caseSensitive : false,
+    callback: function() {
+        $('abbr').each(function(){
+            $(this).data('title',$(this).attr('title'));
+            $(this).removeAttr('title');
+        });
+
+        /**
+         * when abbreviations are mouseover-ed show a tooltip with the data from the title attribute
+         */
+        $('abbr').mouseover(function() {
+
+            // first remove all existing abbreviation tooltips
+            $('abbr').next('.tooltip').remove();
+
+            // create the tooltip
+            $(this).after('<span class="tooltip">' + $(this).data('title') + '</span>');
+
+            // position the tooltip 4 pixels above and 4 pixels to the left of the abbreviation
+            var left = $(this).parent().parent().position().left;
+            var top = $(this).position().top + $(this).height() + 10;
+            $(this).next().css('left',left);
+            $(this).next().css('top',top);
+
+        });
+
+        /**
+         * when abbreviations are clicked trigger their mouseover event then fade the tooltip
+         * (this is friendly to touch interfaces)
+         */
+        $('abbr').click(function(){
+            $(this).mouseover();
+
+            // after a slight 5 second fade, fade out the tooltip for 1 second
+            $(this).next().animate({opacity: 0.95},{duration: 5000, complete: function(){
+                $(this).fadeOut(1000);
+            }});
+        });
+
+        /**
+         * Remove the tooltip on abbreviation mouseout
+         */
+        $('abbr').mouseout(function(){
+            $(this).next('.tooltip').remove();
+        });
+    }
+  });
+});
+</script>

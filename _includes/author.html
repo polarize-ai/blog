@@ -1,0 +1,6 @@
+{% if site.author %}
+<p class="hero-avatar"><a href="#" onclick="collectchat.open()"><img src="{{ site.baseurl }}/assets/images/{{ site.author.image }}" alt="{{ site.author.name }}'s Picture" class="avatar" /></a></p>
+    <h2 class="hero-title">{{ site.author.greetings }}</h2>
+<p class="hero-description">My name is <a href="/about" target="_blank"><strong style="text-decoration: underline; color: black">Helmut Hoffer von Ankershoffen né Oertel</strong></a>. I'm a technical manager and software engineer in Berlin, working in the Internet economy since 1997. It’s nice to meet you - have fun reading about smart IoT or <a href="#" onclick="collectchat.open()"><strong style="text-decoration: underline; color: black">Ask Helmut!</strong></a></p>
+{% endif %}
+{% include social-links.html %}

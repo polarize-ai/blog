@@ -1,0 +1,15 @@
+.idea
+*~
+.DS_Store
+._.DS_Store
+.com.apple.timemachine.supported
+.docker-sync
+.gitattributes
+
+_site
+.sass-cache
+.jekyll-metadata
+*.swp
+.jekyll-crosspost_to_medium
+.medium.token
+.algolia.token
