@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem 'liquid_pluralize'
   gem 'liquid_reading_time'
   gem 'jekyll-algolia'
+  gem 'jekyll-target-blank'
 end
 
 gem "jgd"
