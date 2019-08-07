@@ -1,0 +1,13 @@
+<script src="/assets/js/jquery.exitintent.min.js"></script>
+<script>
+    $.exitIntent('enable');
+    var collectchat = collectchat || {};
+    collectchat.ready = function() {
+        $(document).bind('exitintent',function() {
+            if (typeof window.goodbye == 'undefined') {
+                collectchat.open();
+                window.goodbye = true;
+            }
+        })
+     };
+</script>

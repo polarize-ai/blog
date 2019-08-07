@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Acronym",
+    "synonyms": [],
+    "terms": "acronym,acronyms",
+    "description": "An acronym is a word or name formed as a type of abbreviation from the initial components of a phrase or a word, usually individual letters, as in NATO (North Atlantic Treaty Organization) or scuba (Self-Contained Underwater Breathing Apparatus)."
+  },
+  {
+    "name": "Internet of Things",
+    "synonyms": [ "IoT" ],
+    "terms": "iot,internet of things",
+    "description": "The Internet of things (IoT) is the extension of Internet connectivity into physical devices and everyday objects sometimes called \"edge devices\". Embedded with electronics, Internet connectivity, and other forms of hardware (such as sensors), these devices can communicate and interact with others over the Internet, and they can be remotely monitored and controlled."
+  },
+  {
+    "name": "Machine learning",
+    "synonyms": [ "ML" ],
+    "terms": "ml,machine learning",
+    "description": "Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use in order to perform a specific task effectively without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as \"training data\", in order to make predictions or decisions without being explicitly programmed to perform the task."
+  },
+  {
+    "name": "Zen",
+    "synonyms": [],
+    "terms": "zen",
+    "description": "Zen emphasizes rigorous self-control, meditation-practice, insight into the nature of things (Ch. jianxing, Jp. kensho, \"perceiving the true nature\"), and the personal expression of this insight in daily life, especially for the benefit of others."
+  },
+  {
+    "name": "Graphics processing unit",
+    "synonyms": [ "GPU" ],
+    "terms" : "gpu,gpus,GPU,GPUs,graphics processsing unit,graphics processing units",
+    "description" : "A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device. Their highly parallel structure makes them more efficient than general-purpose central processing units (CPUs) for algorithms that process large blocks of data in parallel such as neural networks simulated in machine learning."
+  },
+  {
+    "name": "Content delivery network",
+    "synonyms": [ "CDN" ],
+    "terms" : "cdn,content delivery network",
+    "description" : "A content delivery network or content distribution network (CDN) is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and high performance by distributing the service spatially relative to end-users. CDNs serve a large portion of the Internet content today, including web objects (text, graphics and scripts), downloadable objects (media files, software, documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social media sites."
+  },
+  {
+    "name": "Chatbot",
+    "synonyms": [],
+    "terms" : "chatbot",
+    "description" : "A chatbot is a computer program which conducts a conversation via auditory or textual methods.Such programs are often designed to convincingly simulate how a human would behave as a conversational partner, although as of 2019, they are far short of being able to pass the Turing test. Chatbots are typically used in dialog systems for various practical purposes including customer service or information acquisition."
+  },
+  {
+    "name": "Content Management System",
+    "synonyms": [],
+    "terms" : "cms,content management system",
+    "description" : "A content management system (CMS) manages the creation and modification of digital content."
+  },
+  {
+    "name": "Top level domain",
+    "synonyms": [ "TLD" ],
+    "terms" : "tld,top level domain",
+    "description" : "A top-level domain (TLD) is one of the domains at the highest level in the hierarchical Domain Name System of the Internet. The top-level domain names are installed in the root zone of the name space. For all domains in lower levels, it is the last part of the domain name, that is, the last label of a fully qualified domain name. For example, in the domain name www.example.com, the top-level domain is com."
+  },
+  {
+    "name": "Kubernetes",
+    "synonyms": [ "K8s"],
+    "terms" : "k8s,Kubernetes",
+    "description" : "Kubernetes (commonly stylized as k8s) is an open-source container-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation. It aims to provide a \"platform for automating deployment, scaling, and operations of application containers across clusters of hosts\". It works with a range of container tools, including Docker."
+  },
+  {
+    "name": "Job polarization",
+    "synonyms": [],
+    "terms" : "job polarization",
+    "description" : "Economists refer to the polarization of the labor force when middle-class jobs—requiring a moderate level of skills, like autoworkers' jobs—seem to disappear relative to those at the bottom, requiring few skills, and those at the top, requiring greater skill levels."
+  }
+]

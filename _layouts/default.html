@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if site.plugins_dir contains 'jekyll-seo-tag' %}
+        {% if page.autopages %}
+            {% include head-seo-tag.html %}
+        {% else %}
+           {% include head-seo.html %}
+        {% endif %}
+    {% else %}
+        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
+        {% if page.autopages %}
+            <meta name="description" content="Posts about {{ page.autopages.display_name }}. {{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }}">
+        {% endif %}
+            <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }}">
+        {% else %}
+        <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+    {% endif %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Embed Code -->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet" />
+
+    <!-- CSS Styles -->
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
+<body class="{{ layout }} {{ page.class | default: 'default' }}">
+    <div id="page" class="site">
+
+        {% if page.url == "/" or page.url  == "/index.html" %}
+            <div class="hero-wrap">
+                {% if site.cover_image %}
+                <div class="hero-wrap-bg" style="background-image: url({{ site.baseurl }}/assets/images/{{ site.cover_image }})"></div>
+                {% endif %}
+                {% include header.html %}
+                <section class="hero outer fadeInDown delay_075s">
+                    <div class="inner">
+                        {% include author.html %}
+                    </div><!-- .inner -->
+                </section><!-- .hero -->
+            </div><!-- .hero-wrap -->
+        {% else %}
+            {% include header.html %}
+        {% endif %}
+
+        {{ content }}
+
+        {% if paginator.total_posts > site.paginate %}
+            {% if page.class == 'tag-template' %}
+                {% include tag-pagination.html %}
+            {% endif %}
+            {% endif %}
+
+        {% if site.mailchimp_url and page.class == 'tag-template' %}
+            {% include newsletter-box.html %}
+        {% endif %}
+
+        <footer id="colophon" class="site-footer outer">
+            <div class="site-footer-inside">
+                {% include social-links.html %}
+                <p class="site-info">
+                    <img src="/favicon-32x32.png">&nbsp;&nbsp;<a href="#">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}<br/><a href="/privacy-policy">privacy</a> and <a href="/comment-policy">comment</a> policy
+                </p>
+                <p class="back-to-top">
+                    <a id="top-button" class="top-button" href="#page">
+                        <span class="icon-arrow-up" aria-hidden="true"></span>
+                        <span class="screen-reader-text">Back to top</span>
+                    </a>
+                </p>
+            </div><!-- .site-footer-inside -->
+        </footer><!-- .site-footer -->
+    </div><!-- .site -->
+    <div id="site-overlay" class="site-overlay"></div>
+    {% include sidebar.html %}
+    {% include analytics.html %}
+    <!-- Javascript Assets -->
+    <script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/plugins.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/webshare.js"></script>
+
+{% include cookie-consent.html %}
+{% include chat.html %}
+{% include adsense.html %}
+{% include exit-intent.html %}
+{% include console.html %}
+{% if page.glossarize %}
+    {% include glossarizer.html %}
+{% endif %}
+{% if page.voice %}
+    {% include voice.html %}
+{% endif %}
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+{% if site.name and site.description %}
+<section class="widget widget-text">
+    <h2 class="widget-title">About {{ site.name }}</h2>
+    <p>{{ site.description }}</p>
+</section>
+{% endif %}
+
+<section class="widget widget-recent-posts">
+    <h2 class="widget-title">Recent Articles</h2>
+    <ul>
+        {% for post in site.posts limit:3 %}
+        <li>
+            <div class="post-header">
+                <div class="post-meta">
+                    <time class="published" datetime="??">{{ post.date | date: "%B %-d, %Y" }}</time>
+                </div>
+                <div class="post-title">
+                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                </div>
+            </div>
+            {% if post.featured_image_thumbnail %}
+            <a class="post-thumbnail" href="{{ post.url }}">
+                <img src="{% if post.featured_image_thumbnail contains ' :// ' %}{{ post.featured_image_thumbnail }}{% else %}{{ post.featured_image_thumbnail | absolute_url }}{% endif %}"
+                    alt="{{ post.title }}">
+            </a>
+            {% elsif post.featured_image %}
+            <a class="post-thumbnail" href="{{ post.url }}">
+                <img src="{% if post.featured_image contains ' :// ' %}{{ post.featured_image }}{% else %}{{ post.featured_image | absolute_url }}{% endif %}"
+                    alt="{{ post.title }}">
+            </a>
+            {% else %}
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<!-- Create a sorted array of tags -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
+%}{%
+endcapture %} {% assign sortedTags = site_tags | split:',' | sort %}
+<section class="widget widget-tagcloud">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        {% for tag in sortedTags %}
+        <a href='{{ site.baseurl }}/tag/{{ tag | downcase }}/'>{{ tag | camelcase }}</a>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="widget widget-social-links">
+    <div class="inner">
+        <h2 class="widget-title">Contact</h2>
+        {% include social-links.html %}
+    </div>
+</section>
+
+{% if site.mailchimp_url %}
+<section class="widget widget-newsletter">
+    <div class="inner">
+        <h2 class="widget-title">Subscribe to my newsletter</h2>
+        <p>Stay in the loop regarding smart IoT.</p>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="{{ site.mailchimp_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                class="validate gh-subscribe-form" style="flex-wrap: wrap" target="_blank" novalidate>
+                <div style="width: 100%; margin-bottom: 10px; text-align:left">
+                    <label class="checkbox subfield" for="gdpr_20525">
+                        <input type="checkbox" id="gdpr_20525" name="gdpr[20525]" value="Y" class="av-checkbox gdpr"><span style="font-weight: normal">&nbsp;I accept to receive email</span>
+                    </label>
+                </div>
+                <div style="display: flex; flex: auto">
+                    <label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+                    <input type="email" value="" name="EMAIL" class="required email subscribe-email" id="mce-EMAIL"
+                        placeholder="Your email address">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="margin-top: 0px">
+                </div>
+            </form>
+        </div>
+        <p style="margin-top: 25px; font-size: small; max-width: 600px; margin-left: auto; margin-right: auto">
+            You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit the <a target="_blank" href="https://blog.polarize.ai/privacy-policy">privacy policy</a>.
+        </p>
+    </div>
+</section>
+{% endif %}

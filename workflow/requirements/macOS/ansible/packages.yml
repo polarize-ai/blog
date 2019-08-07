@@ -1,0 +1,35 @@
+---
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/services
+
+homebrew_installed_packages:
+  - bash-completion
+  - curl
+  - git
+  - gpg
+  - telnet
+  - wget
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+  - sublime-text                    # Simple graphical editor
+  - google-chrome                   # Common web browser
+
+composer_packages: []
+
+gem_packages:
+  - name: bundler
+
+npm_packages: []
+
+pip_packages: []
+
+pear_packages: []
+
+cargo_packages: []
+
+download_executables: []
+

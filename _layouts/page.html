@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div id="content" class="site-content fadeInDown delay_075s">
+    <main id="main" class="site-main outer">
+        <article class="post-full inner">
+            <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+                {% endif %}
+                <p class="time-to-read">This page will take {{ content | reading_time | pluralize: "minute" }} to read.</p>
+            </header><!-- .post-header -->
+            {% if page.featured_image %}
+            <div class="post-thumbnail"><img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}" /></div>
+            {% endif %}
+            <div class="post-content">
+                {{content}}
+                <p class="thank-you-for-reading">Thank You for reading.</p>
+            </div>
+        </article>
+        {% if site.mailchimp_url %}
+        {% include newsletter-box.html %}
+        {% endif %}
+    </main>
+</div>
