@@ -867,14 +867,14 @@ h6 {
 .post-content  {
   a {
     color: $gray-darkest;
-    border-bottom: 2px solid $color-accent;
+    border-bottom: 1px solid $color-accent;
     text-decoration: none !important;
     white-space: nowrap;
   }
 
   a.external-link {
     color: $gray-darkest;
-    border-bottom: 2px solid $color-accent;
+    border-bottom: 1px solid $color-accent;
     text-decoration: none;
     margin-right:20px;
     position: relative;
