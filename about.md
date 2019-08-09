@@ -65,7 +65,7 @@ I tried my best to make the content of this blog as accessible as possible to ev
 ![features](https://media.giphy.com/media/XI25MAHEAtWie5mJlF/giphy.gif#right)
 
 - For those with reading disabilities or that want to enjoy the content in a fully relaxed mode every blog post can be **read aloud** - simply click on the play button above the text of each article.
-- For those that are not yet into the terminology used throughout this blog certain phrases and acronyms are highlighted and marked with down-arrow - hover over or tap them to see the definition in the growing **glossary**.
+- For those that are not yet into the terminology used throughout this blog certain phrases and acronyms are highlighted and marked with down-arrow - hover over or tap them to see the definition or read the growing [**glossary**](/glossary).
 - All blog posts are **fully tagged**. Click on tags to find more articles related to the given topic.
 - As I started my professional career by building Germany's first major Internet search engine [FIREBALL](https://de.wikipedia.org/wiki/Fireball_(Suchmaschine)) I could not prevent myself from integrating a simple but speedy **[search engine](/search)**. You can find articles by searching in the full text of all posts - enter any keyword or phrase of interest.
 - If you want to stay up to date without having to visit this blog repeatedly to check what is new I welcome you to subscribe  to the [**newsletter**](http://eepurl.com/gyWuRj). I will mail out an update listing all new articles about once a month.

@@ -49,6 +49,8 @@ navigation:
     url: /
   - text: About
     url: /about
+  - text: Glossary
+    url: /glossary
 
 # Required Plugins
 plugins_dir:

@@ -61,13 +61,13 @@
         {{ content }}
 
         {% if paginator.total_posts > site.paginate %}
-        {% if page.class == 'tag-template' %}
-        {% include tag-pagination.html %}
-        {% endif %}
-        {% endif %}
+            {% if page.class == 'tag-template' %}
+                {% include tag-pagination.html %}
+            {% endif %}
+            {% endif %}
 
         {% if site.mailchimp_url and page.class == 'tag-template' %}
-        {% include newsletter-box.html %}
+            {% include newsletter-box.html %}
         {% endif %}
 
         <footer id="colophon" class="site-footer outer">

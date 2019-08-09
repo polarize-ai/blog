@@ -867,14 +867,14 @@ h6 {
 .post-content  {
   a {
     color: $gray-darkest;
-    border-bottom: 2px solid $color-accent;
+    border-bottom: 1px solid $color-accent;
     text-decoration: none !important;
     white-space: nowrap;
   }
 
   a.external-link {
     color: $gray-darkest;
-    border-bottom: 2px solid $color-accent;
+    border-bottom: 1px solid $color-accent;
     text-decoration: none;
     margin-right:20px;
     position: relative;
@@ -883,7 +883,7 @@ h6 {
   a.external-link:after {
     position: absolute;
     right: -20px;
-    content: "\2197";
+    content: "\2197\fe0e    ";
     font-family: $font-primary;
     color: $color-accent;
     border: none !important;
@@ -953,6 +953,10 @@ h6 {
   margin-top: 1.5em !important;
   margin-bottom: 1.5em !important;
   letter-spacing: 2px;
+}
+
+.glossary-label {
+  color: $gray;
 }
 
 /**

@@ -81,7 +81,7 @@
        */
 
       for (var i = 0; i < base.glossary.length; i++) {
-        var terms = base.glossary[i].term.split(',')
+        var terms = base.glossary[i].terms.split(',')
 
         for (var j = 0; j < terms.length; j++) {
           /* Trim */
@@ -125,11 +125,11 @@
 
       for (var i = 0; i < this.glossary.length; i++) {
         if (this.options.exactMatch) {
-          if (this.glossary[i].term == this.clean(term)) {
+          if (this.glossary[i].terms == this.clean(term)) {
             return this.glossary[i].description.replace(/\"/gi, '&quot;')
           }
         } else {
-          if (this.glossary[i].term.match(regex)) {
+          if (this.glossary[i].terms.match(regex)) {
             return this.glossary[i].description.replace(/\"/gi, '&quot;')
           }
         }

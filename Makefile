@@ -50,7 +50,10 @@ serve: ## Serve on workstation
 open: ## Open on workstation
 	python -mwebbrowser http://127.0.0.1:4000/
 
-build: ## Build _site
+glossary: ## Copy glossary data
+	cp -f _data/glossary.json assets/glossary.json
+
+build: glossary ## Build _site
 	JEKYLL_ENV="production" bundle exec jekyll build --verbose --trace
 
 index: ## Index content with Algolia
