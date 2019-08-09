@@ -42,7 +42,7 @@ Last but not least I am tinkering with the idea of having a **secondary income**
 
 ![secondary income](/assets/images/pages/madagascar.jpg#wide)
 
-By the way: All photos in this blog are shot with my iPhone and a little help provided by the embedded [A11 bionic chip](https://en.wikipedia.org/wiki/Apple_A11) that accelerates the inference based on a neural network pre-trained by Apple for computational photography - which is actually a good example of the machine learning on edge devices this blog is about.
+By the way: All photos in this blog are shot with my iPhone and a little help provided by the embedded [A11 bionic chip](https://en.wikipedia.org/wiki/Apple_A11) that accelerates the inference based on a neural network pre-trained by Apple for computational photography - which is actually a good example of the machine learning on edge devices this blog is about. Follow me on [Instagram][https://www.instagram.com/helmuthva/] to see more photos.
 
 ### I cherish your feedback
 
