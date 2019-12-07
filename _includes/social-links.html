@@ -3,6 +3,12 @@
         <img src="/assets/icons/chat.png">
         <span class="screen-reader-text">Ask Helmut!</span>
     </a>
+    {% if site.social_about %}
+    <a href="{{ site.social_about }}" target="_blank">
+      <img src="/assets/icons/fingerprint.png">
+        <span class="screen-reader-text">about</span>
+    </a>
+    {% endif %}
     {% if site.social_linkedin %}
     <a href="https://www.linkedin.com/in/{{ site.social_linkedin }}" target="_blank">
         <span class="fa-linkedin fa" aria-hidden="true"></span>
@@ -61,12 +67,6 @@
     <a href="https://www.reddit.com/user/{{ site.social_reddit }}" target="_blank">
         <span class="fa-reddit fa" aria-hidden="true"></span>
         <span class="screen-reader-text">reddit</span>
-    </a>
-    {% endif %}
-    {% if site.about %}
-    <a href="{{ site.social_about }}" target="_blank">
-        <span class="fa-id-card fa" aria-hidden="true"></span>
-        <span class="screen-reader-text">about</span>
     </a>
     {% endif %}
     <a href="/feed.xml" target="_blank">

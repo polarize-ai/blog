@@ -23,7 +23,8 @@ composer_packages: []
 gem_packages:
   - name: bundler
 
-npm_packages: []
+npm_packages:
+  - name: svgo
 
 pip_packages: []
 
@@ -32,4 +33,3 @@ pear_packages: []
 cargo_packages: []
 
 download_executables: []
-

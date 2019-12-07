@@ -36,8 +36,6 @@ Third "smart IoT" is one of the few mega-trends that will effect everybody and e
 
 Fourth "smart IoT" is just an application of "machine learning" to "edge devices" - it is complex but not really complicated. If some of the articles **lower the barrier** for software engineers, data scientists and makers to study it, I have already succeeded.
 
-In addition I am lazily **looking for a new job**[^4] - I needed some place to guide headhunters to so I can ingress opportunities in a more structured and efficient way - this is the place and the little chatbot <a href="#" onclick="collectchat.open()">**Ask Helmut!**</a> is there to help me focus on the part time holiday I am currently taking.
-
 Last but not least I am tinkering with the idea of having a **secondary income** by being an author and educator. This blog is a way to challenge myself and check if I am capable of going into this direction before I take the decision to create some paid content. In the meantime you can [gift me a vegan smoothie](https://www.buymeacoffee.com/ZBL1NxlY9) - at the end of each article you will find a related button - click it and pay with your credit card or PayPal to wire me a micro-payment.
 
 ![secondary income](/assets/images/pages/madagascar.jpg#wide)
@@ -79,7 +77,7 @@ The following might astound you: This blog was **not built using Wordpress** or 
 This time however I wanted to experiment with a fully lean approach and thus chose [**Jekyll**](https://jekyllrb.com) in combination with [**GitHub Pages**](https://pages.github.com/).
 
 After a few hours playing with it I can already say by heart. **"I love it!"**:
-- Jekyll generates **fully static HTML pages** from Markdown[^5] which are than published to GitHub Pages which hosts the site.
+- Jekyll generates **fully static HTML pages** from Markdown[^4] which are than published to GitHub Pages which hosts the site.
 - As I use Markdown and GitHub daily when doing software development and documentation there is **no break when context switching from engineering to blogging** which helps me stay efficient.
 - There is a lot of stuff Wordpress can do but Jekyll doesn't - however **everything a blog needs Jekyll can do**.
 - Jekyll is **easy to set up and extend** - the site including all features was built in 20 hours.
@@ -106,7 +104,7 @@ The logo is a visualisation of a brain and shows quite nicely how artificial neu
 
 ![polarize.ai author](/assets/images/authorimage.jpg#left)
 
-As you might have guessed my name is **Helmut Hoffer von Ankershoffen** with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife Sandra.
+As you might have guessed my name is **Helmut Hoffer von Ankershoffen** with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife [Sandra](https://my-healthy-life.de).
 
 I was born in **1973** in [Weinheim a.d. Bergstraße](https://de.wikipedia.org/wiki/Weinheim) and moved to Berlin 18 years later to study computer science and mathematics as major subjects, psychology and philosphy as minors.
 
@@ -116,16 +114,13 @@ While at it I co-founded a software agency **Neofonie** (called Infonie when fou
 
 After accidentally colliding with some Cupertino based heavy weight, helping launch WeGreen and getting an award for it I built another digital agency.
 
-In summer 2017 I decided to finally **switch perspective**, not be self-employed for the first time of my life and apply all I learned for the benefit of *one* company.
+In summer 2017 I decided to finally **switch perspective**, not be self-employed for the first time of my life and apply all I learned for the benefit of *one* company. I joined Campanda as CTO until late summer 2019.
 
-Currently I am **lazily looking for the next opportunity as CTO or CDO** in a stable, well-structured and process-oriented company that wants to grow with innovation and values tech as an important means to drive business.
-
-If you are an executive, headhunter or hr manager feel free to use <a href="#" onclick="collectchat.open()">**Ask Helmut!**</a> to **get my full CV and make a date** - you will have to answer some simple questions first just to make sure we have a match!
+Currently I am **taking a sabbatical** and focusing on reading.
 
 ## Footnotes
 
 [^1]: The quote **"Express Yourself"** is the title of a song written and performed by Madonna, produced in cooperation with Stephen Bray in 1989.<br/><br/>She has this to say about the song: <br/><br/>"The ultimate thing behind the song is that **if you don't express yourself, if you don't say what you want, then you're not going to get it**. <br/><br/>And in effect you are chained down by your inability to say what you feel or go after what you want. No matter how in control you think you are about sexuality in a relationship there is always the power struggle... always a certain amount of compromise. Of being beholden, if you love them. You do it because you choose to. No one put the chain around this neck but me. <br/><br/>I wrote 'Express Yourself' to tell women around the world that pick and choose the best for yourself, before that chain around your neck, kills you instead. It's my take on how man can express what they want, the same prerogative should be there for a woman too."
 [^2]: While writing this I remember telling to reporters in press interviews that **I want to have a chip in my brain** in two decades and they thought I was a little crazy - this was in 1999. Now there is "Neuralink" (a startup of Elon Musk) working on it - but that's enough content for a future blog post ...
 [^3]: The [**boiling frog**](https://en.wikipedia.org/wiki/Boiling_frog) is a fable describing a frog being slowly boiled alive. The premise is that if a frog is put suddenly into boiling water, it will jump out, but if the frog is put in tepid water which is then brought to a boil slowly, it will not perceive the danger and will be cooked to death. The story is often used as a metaphor for the inability or unwillingness of people to react to or be aware of sinister threats that arise gradually rather than suddenly.<br><br>**Important notice**: Don't try this at home as this is really just a [fable](http://archive-srel.uga.edu/outreach/ecoviews/ecoview071223.htm) not a true natural phenomen - seems like frogs are smarter than some human beings after all ,-)
-[^4]: The day I am writing this is the **1st of August 2019** - the company I am currently working for had to let go staff yesterday.
-[^5]: **Markdown** is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+[^4]: **Markdown** is a lightweight markup language with plain text formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.

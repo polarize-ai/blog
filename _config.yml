@@ -184,7 +184,8 @@ exclude:
   - .git
   - Makefile
   - README.md
-
+  - _compress_images_cache.yml
+  
 imageoptim:
   pngout: false
   svgo: true
