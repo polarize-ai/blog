@@ -12,7 +12,7 @@ voice: true
 
 ### What you will read about
 
-This blog is about "smart IoT" thus you will read about the application of **machine learning** (ML) to the **"Internet of Things"** (IoT). 
+This blog is about "smart IoT" thus you will read about the application of **machine learning** (ML) to the **"Internet of Things"** (IoT).
 
 This sounds gibberish to you? That's exactly why you should read on as machine learning and IoT are **mega-trends** that will affect everybody, in your working and private life.
 
@@ -32,7 +32,7 @@ First and foremost this blog is an experimental way to get back my Zen. Having w
 
 Second the topic "smart IoT" and all it entails is of great interest for me personally. As part of my formal studies in Technical University of Berlin I proudly worked as a [researcher](https://www.flp.tu-berlin.de/fileadmin/fg53/KIT-Reports/r132.pdf) in the "FLP/KIT institute" managed by [Prof. Dr. Bernd Mahr](https://www.wissensforschung.tu-berlin.de/menue/ueber_uns/teilbereichsleiter/prof_dr_bernd_mahr/) with KIT standing for "Künstliche Intelligenz beim Textverstehen" ("artificial intelligence for understanding text"). I studied formal and statistical ways to make machines "smart". However the computational barrier was to high for some of the algorithms, given the throughput and efficiency of central processing units of that time - GPUs were not even invented back than. Some of the algorithms we studied than are called "machine learning" nowadays - I remember telling my peers that **I will be back working with machine learning when computational power increased by one order of magnitude  - which is now**[^2].
 
-Third "smart IoT" is one of the few mega-trends that will effect everybody and every business. I worked for a lot of clients in the past that were hard to convince when mega-trends arrived and tried to stick to what was known and working. Interestingly enough the bigger and more obvious the change ahead the more rigid was the belief that nothing will change. Sadly enough this let to some frogs boiling[^3]. This blog might help some to **invest in "smart Iot" early** and experiment with what it might mean to their business, before others take it away. 
+Third "smart IoT" is one of the few mega-trends that will effect everybody and every business. I worked for a lot of clients in the past that were hard to convince when mega-trends arrived and tried to stick to what was known and working. Interestingly enough the bigger and more obvious the change ahead the more rigid was the belief that nothing will change. Sadly enough this let to some frogs boiling[^3]. This blog might help some to **invest in "smart Iot" early** and experiment with what it might mean to their business, before others take it away.
 
 Fourth "smart IoT" is just an application of "machine learning" to "edge devices" - it is complex but not really complicated. If some of the articles **lower the barrier** for software engineers, data scientists and makers to study it, I have already succeeded.
 
@@ -42,7 +42,7 @@ Last but not least I am tinkering with the idea of having a **secondary income**
 
 ![secondary income](/assets/images/pages/madagascar.jpg#wide)
 
-By the way: All photos in this blog are shot with my iPhone and a little help provided by the embedded [A11 bionic chip](https://en.wikipedia.org/wiki/Apple_A11) that accelerates the inference based on a neural network pre-trained by Apple for computational photography - which is actually a good example of the machine learning on edge devices this blog is about. Follow me on [Instagram][https://www.instagram.com/helmuthva/] to see more photos.
+By the way: All photos in this blog are shot with my iPhone and a little help provided by the embedded [A11 bionic chip](https://en.wikipedia.org/wiki/Apple_A11) that accelerates the inference based on a neural network pre-trained by Apple for computational photography - which is actually a good example of the machine learning on edge devices this blog is about. Follow me on [Instagram][https://www.instagram.com/helmut.hoffer.von.ankershoffen/] to see more photos.
 
 ### I cherish your feedback
 
@@ -52,7 +52,7 @@ Furthermore there will always be **something I missed** when doing the research 
 
 ... and don't forget, this is the first time I am writing a blog which is why I am feeling quite insecure and long for **confirmation**.
 
-This is why I added multiple possibilities that allow you to **provide feedback**: 
+This is why I added multiple possibilities that allow you to **provide feedback**:
 
 - Below each article you will find a little forum that allows you to provide a reaction - such as an upvote - with one press of your finger or to take more time and write down your own thoughts and insights on the topic at hand. Simply click on **"Show comments"** below each article to see the forum and please respect the [comment policy]("/comment-policy") so everybody feels at home.
 - If you have an interesting article i should read for my next blog post or want me to cover a specific topic feel free to use <a href="#" onclick="collectchat.open()">**Ask Helmut!**</a> - it will ask you about it and forward your suggestion to my mobile phone.
@@ -71,12 +71,12 @@ I tried my best to make the content of this blog as accessible as possible to ev
 - If you want to stay up to date without having to visit this blog repeatedly to check what is new I welcome you to subscribe  to the [**newsletter**](http://eepurl.com/gyWuRj). I will mail out an update listing all new articles about once a month.
 
 ### How this blog was built
- 
+
  ![features](/assets/images/pages/work.jpg#left)
 
-The following might astound you: This blog was **not built using Wordpress** or any other CMS! Actually writing this feels strange to me as well as Wordpress and commercial content management systems is one of many skills I executed on in dozens of projects. 
+The following might astound you: This blog was **not built using Wordpress** or any other CMS! Actually writing this feels strange to me as well as Wordpress and commercial content management systems is one of many skills I executed on in dozens of projects.
 
-This time however I wanted to experiment with a fully lean approach and thus chose [**Jekyll**](https://jekyllrb.com) in combination with [**GitHub Pages**](https://pages.github.com/). 
+This time however I wanted to experiment with a fully lean approach and thus chose [**Jekyll**](https://jekyllrb.com) in combination with [**GitHub Pages**](https://pages.github.com/).
 
 After a few hours playing with it I can already say by heart. **"I love it!"**:
 - Jekyll generates **fully static HTML pages** from Markdown[^5] which are than published to GitHub Pages which hosts the site.
@@ -108,17 +108,17 @@ The logo is a visualisation of a brain and shows quite nicely how artificial neu
 
 As you might have guessed my name is **Helmut Hoffer von Ankershoffen** with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife Sandra.
 
-I was born in **1973** in [Weinheim a.d. Bergstraße](https://de.wikipedia.org/wiki/Weinheim) and moved to Berlin 18 years later to study computer science and mathematics as major subjects, psychology and philosphy as minors. 
+I was born in **1973** in [Weinheim a.d. Bergstraße](https://de.wikipedia.org/wiki/Weinheim) and moved to Berlin 18 years later to study computer science and mathematics as major subjects, psychology and philosphy as minors.
 
 I concluded my studies "with distinction" while helping to launch Germany's first commercial Internet search engine [**FIREBALL**](https://de.wikipedia.org/wiki/Fireball_(Suchmaschine)) as lead engineer in 1996 as contract work for Gruner+Jahr, Europe's biggest magazine publishing house than and today.
 
 While at it I co-founded a software agency **Neofonie** (called Infonie when founded) with two peers from university, managed it as CTO and CEO and proudly helped build some relevant online businesses for our reknown clients.
 
-After accidentally colliding with some Cupertino based heavy weight, helping launch WeGreen and getting an award for it I built another digital agency. 
+After accidentally colliding with some Cupertino based heavy weight, helping launch WeGreen and getting an award for it I built another digital agency.
 
 In summer 2017 I decided to finally **switch perspective**, not be self-employed for the first time of my life and apply all I learned for the benefit of *one* company.
 
-Currently I am **lazily looking for the next opportunity as CTO or CDO** in a stable, well-structured and process-oriented company that wants to grow with innovation and values tech as an important means to drive business. 
+Currently I am **lazily looking for the next opportunity as CTO or CDO** in a stable, well-structured and process-oriented company that wants to grow with innovation and values tech as an important means to drive business.
 
 If you are an executive, headhunter or hr manager feel free to use <a href="#" onclick="collectchat.open()">**Ask Helmut!**</a> to **get my full CV and make a date** - you will have to answer some simple questions first just to make sure we have a match!
 

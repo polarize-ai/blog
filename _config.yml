@@ -22,26 +22,27 @@ author:
   greetings: 'Hi there!'
   description: "My name is Helmut Hoffer von Ankershoffen né Oertel. I'm a technical manager and software engineer in Berlin, working in the Internet economy since 1997."
   bio: 'I am a technical manager and software engineer in Berlin working as founder, CEO or CTO since 1997.'
-  twitter: 'helmut_hva'
+  twitter: 'h_ankershoffen'
 
 # Twitter
 twitter:
-  username: 'helmut_hva'
+  username: 'h_ankershoffen'
   card: 'summary'
 
 social:
   name: 'Helmut Hoffer von Ankershoffen né Oertel'
   links:
-    - 'https://twitter.com/helmut_hva'
-    - 'https://www.linkedin.com/in/helmuthva'
-    - 'https://github.com/helmuthva'
+    - 'https://twitter.com/h_ankershoffen'
+    - 'https://www.linkedin.com/in/helmut-hoffer-von-ankershoffen/'
+    - 'https://github.com/helmut-hoffer-von-ankershoffen'
 
 # Social links
-social_twitter: 'helmut_hva'
-social_github: 'helmuthva'
-social_instagram: 'helmuthva'
-social_linkedin: 'helmuthva'
+social_twitter: 'h_ankershoffen'
+social_github: 'helmut-hoffer-von-ankershoffen'
+social_instagram: 'helmut.hoffer.von.ankershoffen'
+social_linkedin: 'helmut-hoffer-von-ankershoffen'
 social_reddit: 'helmuthva'
+social_about: 'https://helmut.hoffer-von-ankershoffen.me'
 
 # Navigation
 navigation:
