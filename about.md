@@ -102,7 +102,7 @@ The logo is a visualisation of a brain and shows quite nicely how artificial neu
 
 ## About the author
 
-![polarize.ai author](/assets/images/authorimage.jpg#left)
+![polarize.ai author](/assets/images/helmut-hoffer-von-ankershoffen-ne-oertel.jpg#left)
 
 As you might have guessed my name is [**Helmut Hoffer von Ankershoffen**](https://helmut.hoffer-von-ankershoffen.me)** with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife [Sandra](https://my-healthy-life.de).
 

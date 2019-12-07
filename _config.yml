@@ -18,7 +18,7 @@ url: "https://blog.polarize.ai"
 # Author
 author:
   name: 'Helmut Hoffer von Ankershoffen né Oertel'
-  image: 'authorimage.jpg'
+  image: 'helmut-hoffer-von-ankershoffen-ne-oertel.jpg'
   greetings: 'Hi there!'
   description: "My name is Helmut Hoffer von Ankershoffen né Oertel. I'm a technical manager and software engineer in Berlin, working in the Internet economy since 1997."
   bio: 'I am a technical manager and software engineer in Berlin working as founder, CEO or CTO since 1997.'
@@ -185,7 +185,7 @@ exclude:
   - Makefile
   - README.md
   - _compress_images_cache.yml
-  
+
 imageoptim:
   pngout: false
   svgo: true
