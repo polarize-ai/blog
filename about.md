@@ -2,7 +2,7 @@
 layout: page
 title: About
 subtitle: What you will read or listen about in this blog, why you should care and what you always wanted to know about the author.
-description: What you will read about in this blog, why you should care and what you always wanted to know about the Helmut Hoffer von Ankershoffen.
+description: What you will read about in this blog, why you should care and what you always wanted to know about Helmut Hoffer von Ankershoffen.
 featured_image: /assets/images/pages/about.jpg
 glossarize: true
 voice: true
