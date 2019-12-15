@@ -104,7 +104,7 @@ The logo is a visualisation of a brain and shows quite nicely how artificial neu
 
 ![polarize.ai author](/assets/images/helmut-hoffer-von-ankershoffen-ne-oertel.jpg#left)
 
-As you might have guessed my name is [**Helmut Hoffer von Ankershoffen**](https://helmut.hoffer-von-ankershoffen.me)** with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife [Sandra](https://my-healthy-life.de).
+As you might have guessed my name is [**Helmut Hoffer von Ankershoffen**](https://helmut.hoffer-von-ankershoffen.me) with my maiden name being **Oertel**. It was an easy decision to take on her surname when I married my beloved wife [Sandra](https://my-healthy-life.de).
 
 I was born in **1973** in [Weinheim a.d. Bergstraße](https://de.wikipedia.org/wiki/Weinheim) and moved to Berlin 18 years later to study computer science and mathematics as major subjects, psychology and philosphy as minors.
 
