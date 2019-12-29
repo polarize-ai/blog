@@ -13,11 +13,11 @@
            {% include head-seo.html %}
         {% endif %}
     {% else %}
-        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
+        <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %} | Helmut Hoffer von Ankershoffen</title>
         {% if page.autopages %}
-            <meta name="description" content="Posts about {{ page.autopages.display_name }}. {{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }}">
+            <meta name="description" content="Posts about {{ page.autopages.display_name }}. {{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }} by Helmut Hoffer von Ankershoffen">
         {% endif %}
-            <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }}">
+            <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 170 | escape }} by Helmut Hoffer von Ankershoffen">
         {% else %}
         <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
     {% endif %}
@@ -31,7 +31,7 @@
 
     <!-- Font Embed Code -->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet" />
-  
+
     <!-- CSS Styles -->
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
 

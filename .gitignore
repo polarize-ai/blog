@@ -9,6 +9,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 *.swp
 .jekyll-crosspost_to_medium
 .medium.token

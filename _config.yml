@@ -17,7 +17,7 @@ url: "https://blog.polarize.ai"
 
 # Author
 author:
-  name: 'Helmut Hoffer von Ankershoffen né Oertel'
+  name: 'Helmut Hoffer von Ankershoffen'
   image: 'helmut-hoffer-von-ankershoffen-ne-oertel.jpg'
   greetings: 'Hi there!'
   description: "My name is Helmut Hoffer von Ankershoffen born Oertel. I'm a technical manager and software engineer in Berlin, working in the Internet economy since 1997."
@@ -30,7 +30,7 @@ twitter:
   card: 'summary'
 
 social:
-  name: 'Helmut Hoffer von Ankershoffen né Oertel'
+  name: 'Helmut Hoffer von Ankershoffen'
   links:
     - 'https://twitter.com/h_ankershoffen'
     - 'https://www.linkedin.com/in/helmut-hoffer-von-ankershoffen/'
